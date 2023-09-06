@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html id="all">
+    <head>
+        <title>working...</title>
+        <style>
+            body {
+                background-color: rgba(59, 156, 29, 0.678);
+                color: pink;
+                text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+              
+               
+
+            }
+            #text {
+                width: 400px;
+                background-color: rgba(59, 156, 29, 0.678);
+                text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+                border-radius: 60;
+               border: solid black;
+               padding-top: 10px;
+               padding-bottom: 10px;
+               padding-left: 30px;
+               padding-right: 30px;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <h2>
+            <div><img width="800px" height="400px" id="pic" src="pics/pic1.jpg" alt="пикча даста"/></a></div>
+        </h2>
+        <p><button id="btn" onclick="nextpic()">PRESS ME))</button></p>
+        
+        <script>
+              var i = 0;
+            function nextpic() {
+                i = i + 1;
+                if (i === 1) {document.getElementById("pic").setAttribute("src","pics/pic2.jpg");}
+                if (i === 2) {document.getElementById("pic").setAttribute("src","pics/pic3.jpg");}
+                if (i === 3) {document.getElementById("pic").setAttribute("src","pics/pic1.jpg"); i = 0;}
+                
+            }
+            function clr() {
+                document.getElementById("all").innerHTML = " ";
+            }
+        </script>
+
+    </body>
+</html>
